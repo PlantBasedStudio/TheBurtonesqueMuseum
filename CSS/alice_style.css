@@ -1,0 +1,14 @@
+.bodi{
+    background-image: url("../../IMG/Alice/header-items-v2.jpg");
+    font-family: "Arima Madurai";
+    background-position: top;
+    background-size: 90%;
+    width: 100dvw;
+}
+
+p{
+    margin-top: 10%;
+
+    background-color: blue;
+    width: 30%;
+}

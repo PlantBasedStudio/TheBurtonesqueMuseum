@@ -1,0 +1,139 @@
+.bodi{
+    background-image: url("../IMG/Coffee_shop/background.png");
+    font-family: "Arima Madurai";
+    background-repeat: no-repeat; 
+    background-position: center;
+    object-fit: fill;
+    background-size: cover;
+    width: 100dvw;
+}
+
+p{
+    color: white;
+}
+
+.first_text p{
+    font-weight: bold;
+    text-align: center;
+}
+
+#parent{
+    display: flex;
+    justify-content: center;
+}
+
+.first_text{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #7E6047;
+}
+
+.carte h2{
+    color: #B08968;
+}
+
+.carte p{
+    text-align: center;
+}
+
+.carte .first{
+    background-color: #7E6047;
+    height: 360px;
+    width: 320px;
+
+    border-radius: 20px;
+}
+
+.carte{
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    text-align: center;
+
+}
+
+#buttonlink{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #B08968;
+    width: 200px;
+    border-radius: 50px;
+}
+
+#buttonlink p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.paire{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 3%;
+}
+
+#global{
+    margin-top: 95px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1023px) {
+    
+}
+
+/* Tablette */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .carte{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 1em;
+
+        align-items: center;
+        text-align: center;
+    }
+    
+    .carte .first{
+        background-color: #7E6047;
+        height: 30%;
+        width: 50%;
+
+        border-radius: 20px;
+    }
+}
+
+/* Téléphone */
+@media screen and (max-width:767px) {
+
+    .carte{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 1em;
+        
+        align-items: center;
+        text-align: center;
+    }
+
+    .carte .first{
+        background-color: #7E6047;
+        height: 30%;
+        width: 70%;
+
+        border-radius: 20px;
+    }
+
+    .image{
+        width: 40%;
+        height: 40%;
+    }
+
+}

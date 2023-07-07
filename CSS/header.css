@@ -1,0 +1,266 @@
+
+#navMobile{
+    display: none;
+}
+header{
+    display: flex;
+    position: fixed;
+    margin: 0;
+    width: 100dvw;
+    height: 100px;
+    font-size : 2.5em;
+    font-family: 'Uncanny', sans-serif;
+    z-index: 10;
+}
+
+
+.dark{
+    background-color: #414141;
+}
+
+.dark  .logo:hover{
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%) drop-shadow( 0px 4px 4px #CEC7B6);
+}
+
+.dark .logo {
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.light{
+    background-color: #ffffff;
+}
+
+.light  .logo{
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.light  .logo:hover{
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%) drop-shadow( 0px 4px 4px #CEC7B6);
+}
+
+.submenu {
+    display: none;
+}
+
+.logo{
+    width: 80px;
+    margin-right: 1em;
+}
+
+
+
+#theHeader{
+    list-style-type: none;
+    display: inline-flex;
+    width: 100dvw;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
+.dark  .list:hover .submenu{
+    background-color: #414141;
+    list-style-type: none;
+}
+.light  .list:hover .submenu{
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+.dark .submenu > li > a:hover {
+    filter: drop-shadow(4px 4px 2px #CEC7B6);
+}
+
+.light .submenu > li > a:hover{
+    filter: drop-shadow(4px 4px 2px #000000);
+}
+
+
+.dark li > a, .dark li > p {
+    text-decoration: none;
+    color: white;
+}
+
+.light li > a, .light li > p {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.dark li > a:hover, .dark li > p:hover{
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.6);
+    
+}
+
+.light li > a:hover, .light li > p:hover{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.dark li > a:visited{
+    color: white;
+}
+
+.light li > a:visited{
+    color: #000000;
+}
+
+#shop{
+    border-radius: 20px;
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+}
+.dark #shop{
+    border: solid 2px #CEC7B6;
+}
+.light #shop{
+    border: solid 2px #131313;
+}
+
+
+#shop:hover{
+    background-color: #cec7b660;
+}
+
+#shadowHeader{
+    width: 100dvw;
+    height: 20px;
+    position: absolute;
+    top: 90px;
+    filter: blur(20px);
+    background-color: #CEC7B6;
+}
+
+@media screen and (min-width: 1023px) {
+    ul > .list:hover .submenu{
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 20%;
+        text-align: left;
+        padding: 0.2em 0.4em;
+        top: 95px;
+        
+    }
+    #navMobile{
+        display: none;
+    }
+    #theHeader{
+        display: flex;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header{
+        font-size : 1.6em;
+    }
+
+    #theHeader{
+        display: flex;
+        
+    }
+
+    ul > .list .submenu{
+        position: absolute;
+        z-index: 1000;
+        width: 20%;
+        text-align: left;
+        padding: 0.4em 0.4em;
+        
+        line-height: 2em;
+        
+    }
+    #navMobile{
+        display: none; 
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    #theHeader{
+        display: none;
+        
+    }
+
+    .dark #theHeader{
+        background-color: #414141;
+    }
+
+    .light #theHeader{
+        background-color: #ffffff;
+    }
+
+
+    #navMobile{
+        display: block; 
+    }
+
+
+    .dark #shop{
+        border: none;
+        display: block;
+        border-radius: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .light #shop{
+        border: none;
+        display: block;
+        border-radius: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .submenu{
+        padding-left: 0;
+        margin-left: 0;
+        height: 100%;
+        z-index: 10;
+        position: absolute;
+        left: 200px;
+    }
+    .list_submenu{
+        padding-left: 0;
+        margin-left: 0;
+        display: block;
+        text-align: left;
+        margin-top: 0.1em;
+        line-height: 2em;
+        
+        
+    }
+
+    .dark #theHeader, .dark .submenu{
+        background-color: #414141;
+        color: #ffffff;
+        height: 90dvh;
+        position: absolute;
+        left: 0;
+        top: 90px;
+    }
+
+    .light ul{
+        background-color: #ffffff;
+        color: #000000;
+        height: 90dvh;  
+        position: absolute;
+        left: 0;
+        top: 90px;
+    }
+
+    .list_submenu:last-child{
+        margin-bottom: 8em;
+    }
+    header > ul >  li{
+        margin-top: 1em;
+    }
+}

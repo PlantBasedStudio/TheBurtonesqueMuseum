@@ -1,0 +1,193 @@
+.home{
+    background-color: #1D1D1B;
+    z-index: 1;
+    font-family: 'Uncanny', sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    margin-top: 95px;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white{
+    color: white;
+}
+
+
+#title{
+    margin-top: 63px;
+    font-size: 63px;
+    font-weight: 500;
+    
+}
+
+.left{
+    text-align: center;
+    margin: 0 20px;
+}
+
+
+.paragraph{
+    font-family: 'The Nightmare', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    
+}
+
+
+
+
+.imgBloc{
+    margin-top: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+}
+
+.imgBloc > img{
+    width: 50%;
+    height: auto;
+    display: inline-flex;
+    border: solid 5px white;
+    transform: scale(1);
+    transition: transform 0.25 ease;
+}
+
+.imgBloc > img:hover{
+    transform: scale(1.25);
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+#fullpage {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+.CTA {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.CTA > img{
+    width: 200px;
+}
+.CTA button{
+    padding: 0.2em 0.6em;
+    border-radius: 12px;
+    font-size: 32px;
+    border: none;
+}
+
+.CTA button:hover{
+    background-color: #CEC7B6;
+}
+
+.special{
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -20dvh;
+    margin-bottom: -20dvh;
+}
+
+.special > img{
+    width: 100dvw;
+
+}
+
+@media screen and (min-width: 1023px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 95px;
+        width: 100dvw;
+        overflow-x: hidden;
+        }
+    
+
+    .left{
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        width: 45dvw;
+        height: 80dvh;
+        margin: 0 auto;
+    }
+    .imgBloc{
+        margin-top: 63px;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: center;
+    }
+    .imgBloc > img{
+        max-width: 20%;
+    }
+
+    .right{
+        grid-column: 2;
+        height: 80dvh;
+        display: flex;
+        flex-direction: column;
+        width: 45dvw;
+    }
+    .CTA {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        margin-right: 35%;
+        height: 50dvh;
+    }
+    .CTA > img{
+        width: 200px;
+    }
+    .special{
+        width: 100dvw;
+        height: 100dvh;
+        z-index: -1;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    
+    .special > img{
+        width: 800px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .special > img{
+        width: 1000px;
+        
+    }
+}

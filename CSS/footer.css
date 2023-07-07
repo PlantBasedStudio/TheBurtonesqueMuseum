@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100dvw;
+    display: flex;
+    background-color: 472574;
+    color: white;
+    align-items: center;
+    font-family: 'Uncanny', sans-serif;
+    height: 10dvh;
+    margin-top: auto;
+    z-index: 10;
+}
+
+.footerList{
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+    width: 100dvw;
+    align-items: center;
+    gap: 2em;
+    height: 10dvh;
+    padding: 0;
+}
+
+.linkFooter{
+    color: white;
+    text-decoration: none;
+}
