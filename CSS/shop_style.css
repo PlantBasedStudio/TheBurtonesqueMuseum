@@ -1,0 +1,33 @@
+body {
+    background-image: url(../IMG/Shop/Spiral_Bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main {
+    font-family: 'Uncanny';
+    text-align: center;
+    color: white;    
+
+}
+
+.title {
+    
+    font-size: 34pt;
+    border-radius: 3em;
+    background: var(--ghost, linear-gradient(180deg, #2C134D 0%, rgba(71, 37, 116, 0.00) 100%));
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 10%;
+}
+
+img{
+    width: 80%;
+    height: auto;
+}
