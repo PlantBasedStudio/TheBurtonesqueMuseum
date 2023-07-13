@@ -6,7 +6,7 @@ body {
     display: flex;
 }
 
-h1 {
+.titles {
     color: white;
     margin-top: 125px;
     text-align: center;
