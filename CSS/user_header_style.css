@@ -1,12 +1,13 @@
 .user_header {
     background: var(--ghost, linear-gradient(180deg, #2C134D 0%, rgba(71, 37, 116, 0.00) 100%));
     right: 0;
-    display: inline-flex;
-    vertical-align: middle ;
+    display: flex;
+    align-items: center;
     margin-top: 130px;
     margin-left: 88%;
     width: max-content;
     border-radius: 3em;
+    padding: .5%;
 
 }
 

@@ -9,12 +9,11 @@ main {
     font-family: 'Uncanny';
     text-align: center;
     color: white;    
-
 }
 
 .title {
     
-    font-size: 34pt;
+    font-size: 55pt;
     border-radius: 3em;
     background: var(--ghost, linear-gradient(180deg, #2C134D 0%, rgba(71, 37, 116, 0.00) 100%));
     width: 80%;
@@ -30,4 +29,9 @@ main {
 img{
     width: 80%;
     height: auto;
+}
+
+.description{
+    background-color: #380B73;
+    font-size: 21pt;
 }
