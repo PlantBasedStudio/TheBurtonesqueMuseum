@@ -1,0 +1,53 @@
+body {
+    background-image: url(../IMG/Contact/Ma\ video\ 3.gif);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+}
+
+h1 {
+    color: white;
+    margin-top: 125px;
+    text-align: center;
+    font-size: 55pt;
+    font-family: "Uncanny";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 50px 20% 0 20%;
+    padding-top: 100px;
+    gap: 10px;
+    max-width: 80%;
+}
+
+input {
+    width: 80%;
+    height: 10%;
+    font-size: 13pt;
+}
+
+.submit{
+    font-family: 'Uncanny';
+    font-size: 21pt;
+    width: 20%;
+}
+@media screen and (max-width:767px) {
+
+    input {
+        width: 80%;
+        height: 10%;
+        font-size: 8pt;
+    }
+
+    .submit{
+        font-family: 'Uncanny';
+        font-size: 13pt;
+        width: 20%;
+    }
+}
