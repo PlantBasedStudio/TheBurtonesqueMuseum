@@ -24,9 +24,8 @@ Ce projet est en collaboration avec le projet "The Wonder Coffee" qui représent
 
 ## Outils et Langages utilisé
 
-**Pour le moment:** HTML, CSS, JS et Figma
+PHP, HTML, CSS, JS et Figma
 
-**Prévu dans le futur:** PHP
 
 
 ## Comment contribuer ?
