@@ -1,14 +1,69 @@
 .bodi{
-    background-image: url("../../IMG/Alice/header-items-v2.jpg");
+    background-image: url("../IMG/Alice/background.jpg");
+    background-repeat: no-repeat;
     font-family: "Arima Madurai";
     background-position: top;
-    background-size: 90%;
+    background-size: 100%;
     width: 100dvw;
 }
 
-p{
-    margin-top: 10%;
+main{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
 
-    background-color: blue;
-    width: 30%;
+.logo_alice{
+    width: 40%;
+    height: 120px;
+    z-index: 1;
+    background-image: url("../IMG/Alice/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 8%;
+}
+
+.bg_logo{
+    width: 45%;
+    height: 140px;
+    border-radius: 15px;
+    background-image: url("../IMG/Alice/bg_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.parent_text{
+    display: flex;
+    justify-content: center;
+    width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text{
+    text-align: center;
+    width: 90%;
+    font-size: 17px;
+}
+
+.parent_logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.paper{
+    width: 120%;
+    background-image: url("../IMG/Alice/book-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
 }
