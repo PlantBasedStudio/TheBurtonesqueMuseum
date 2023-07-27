@@ -1,5 +1,5 @@
 <main class="white grid home">
-        <div id="fullpage" onclick="this.style.display='none';"></div>
+        <div class="fullpage" onclick="this.style.display='none';"></div>
         <section class="left">
             <h1 id="title">Welcome to the Burtonesque Museum</h1>
             <p class="paragraph">Bienvenue dans l'univers ensorcelant du musée burtonesque, où les rêves et les merveilles prennent vie. Plongez dans les méandres de l'imagination unique de Tim Burton et laissez-vous emporter par une expérience hors du commun. Réservez dès maintenant vos billets à notre billetterie, car les portes de ce monde n'attendent que vous.</p>

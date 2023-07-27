@@ -67,7 +67,7 @@ main{
     cursor: pointer;
 }
 
-#fullpage {
+.fullpage {
     display: none;
     position: absolute;
     z-index: 9999;

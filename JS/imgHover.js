@@ -1,5 +1,5 @@
-const imgs = document.querySelectorAll('.resPos');
-const fullPage = document.querySelector('#fullpage');
+let imgs = document.querySelectorAll('.resPos');
+let fullPage = document.querySelector('.fullpage');
 
 
 imgs.forEach(img => {
